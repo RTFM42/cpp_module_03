@@ -36,15 +36,15 @@ void ScavTrap::attack(const std::string &target)
 {
 	if (this->_hit_points_ <= 0)
 	{
-		std::cout << "ClapTrap " << this->_name_ << " is already dead!" << std::endl;
+		std::cout << "ScavTrap " << this->_name_ << " is already dead!" << std::endl;
 	}
 	else if (this->_energy_points_ <= 0)
 	{
-		std::cout << "ClapTrap " << this->_name_ << " dosen't have enough energy points!" << std::endl;
+		std::cout << "ScavTrap " << this->_name_ << " dosen't have enough energy points!" << std::endl;
 	}
 	else
 	{
-		std::cout << "ClapTrap " << this->_name_ << " attacks " << target << " causing " << this->_attack_damage_ << " points of damage!" << std::endl;
+		std::cout << "ScavTrap " << this->_name_ << " attacks " << target << " causing " << this->_attack_damage_ << " points of damage!" << std::endl;
 		this->_energy_points_--;
 	}
 }
